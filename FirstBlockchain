@@ -1,9 +1,7 @@
-# -*- coding: utf-8 -*-
-#"""
 #Created on Sun Jul 16 13:40:17 2023
-
+#
 #@author: Branden Rigney
-#"""
+#
 #Module 1 - Create a Blockchain
 #1. Installed Flask
 #2.Installed POSTman tointeract with blockchain
