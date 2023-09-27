@@ -1,10 +1,11 @@
+
 #Created on Sun Jul 16 13:40:17 2023
 #
 #@author: Branden Rigney
 #
 #Module 1 - Create a Blockchain
-#1. Installed Flask
-#2.Installed POSTman tointeract with blockchain
+#1.Installed Flask
+#2.Installed POSTman to interact with blockchain
 #3.Importing Libraries to use in code
 import datetime
 import hashlib
@@ -82,7 +83,7 @@ def mine_block():
                 'previous_hash': block['previous_hash']}
     return jsonify(response), 200
 
-#Getting the bull Blockchain
+#Getting the full Blockchain
 @app.route('/get_chain', methods = ['GET'])
 def get_chain():
     response = {'chain': blockchain.chain,
@@ -99,6 +100,4 @@ def is_valid():
     return jsonify(response), 200
 
 #Running the app
-app.run(host='0.0.0.0' , port = 5000)
-    
-    
+app.run(host='0.0.0.0' , port = 5000)   
