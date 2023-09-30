@@ -90,4 +90,56 @@ Ethereum is also a distributed state machine. But instead of tracking only the s
      
 ## [DApp structure](https://www.geeksforgeeks.org/architecture-of-a-dapp/#)
 
+![alt text](https://github.com/Kanwrath/Web3-Ethereum-Smart_Contracts-Blockchains/blob/main/Roadmap/img/ArchitectureofaDApp.jpeg)
 
+1. Ethereum blockchain: Ethereum is a decentralized and open-source blockchain platform that establishes a peer-to-peer network that securely executes and verifies application code, called smart contracts. Decentralized applications have their backend code (smart contracts) running on a decentralized network and not a centralized server. DApps use the Ethereum blockchain for data storage.
+
+2. Smart Contracts: DApps use smart contracts to define the state changes happening on the blockchain. A smart contract is a collection of code and data that resides at a specific address on the Ethereum Blockchain and runs on the Ethereum blockchain. They are written in high-level languages such as Solidity and Vyper.
+``` solidity
+
+// Example of smart contract in 
+// decentralized application
+  
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.4.22 <0.9.0;
+  
+contract Migrations 
+{
+  address public owner = msg.sender;
+  uint public last_completed_migration;
+  
+  modifier restricted() 
+  {
+    require(
+      msg.sender == owner,
+      "This function is restricted to the contract's owner"
+    );
+    _;
+  }
+  
+  function setCompleted(uint completed) public restricted 
+  {
+    last_completed_migration = completed;
+  }
+}
+```
+
+3. Ethereum Virtual Machine(EVM): The Ethereum Virtual Machine is the global virtual computer that executes the logic defined in the smart contracts and processes the state changes that happen on this Ethereum network.
+
+4. Front-end: The front-end is the part of the DApps users can see and interact with such as the graphical user interface(GUI), but the front-end also communicates with the application logic defined in smart contracts.
+
+## What is a "provider"
+
+* The nodes one connects with to interact with the blockchain are often called “providers.”
+
+* Ethereum provider (i.e. nodes) implements a JSON-RPC specification. This ensures that there’s a uniform set of methods when our frontend applications want to interact with the blockchain. One can read the state stored on the blockchain once connected to the blockchain through a provider.
+
+## What is a signer? 
+
+* if one wants to write to the state before one can submit the transaction to the blockchain there’s one more thing that needs to be done and the thing is “sign” the transaction using the private key.
+
+* Enter Metamask
+    - Metamask is a browser plugin that serves as an Ethereum wallet. we know that the Ethereum blockchain is a network and we need a special browser extension to connect that network.
+    - Metamask will allow us to connect the blockchain with our personal account and interact with the smart contract.
+    - A user’s private keys are stored by Metamask in the browser, and when a user wants to write to the state, the user needs to “sign” the transaction using the private key.
+    - Metamask acts both as a provider and a signer because Metamask provides a connection to the blockchain (as a “provider”) and since it needs it to sign transactions that’s why it is also a signer.
