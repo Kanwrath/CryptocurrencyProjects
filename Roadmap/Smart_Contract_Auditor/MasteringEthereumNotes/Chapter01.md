@@ -77,3 +77,17 @@ Ethereum is also a distributed state machine. But instead of tracking only the s
 * Ethereum introduces a metering mechanism called gas. As the EVM executes a smart contract, it carefully accounts for every instruction (computation, data access, etc.). Each instruction has a predetermined cost in units of gas. When a transaction triggers the execution of a smart contract, it must include an amount of gas that sets the upper limit of what can be consumed running the smart contract. The EVM will terminate execution if the amount of gas consumed by computation exceeds the gas available in the transaction. Gas is the mechanism Ethereum uses to allow Turing-complete computation while limiting the resources that any program can consume.
   
 * Gas comes from the ether balance.Any unused gas is refunded to the sender after the transaction is complete
+
+## DApp, the next evolution of Ethereum
+
+* What is a DApp?
+    - A DApp is composed of 
+        - Smart contracts on a block chain
+        - A web front end user inter face
+    - May also include
+        - A decentralized storage protocol and platform
+        - a decentralized messaging protocol and platform
+     
+## [DApp structure](https://www.geeksforgeeks.org/architecture-of-a-dapp/#)
+
+
