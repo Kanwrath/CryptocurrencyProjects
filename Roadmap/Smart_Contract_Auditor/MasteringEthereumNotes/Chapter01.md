@@ -66,3 +66,14 @@ Ethereum is also a distributed state machine. But instead of tracking only the s
 * Clients
   - Ethereum has several interoperable implementations of the client software, the most prominent of which are Go-Ethereum (Geth) and Parity.
 
+## The Turing Complete Problem
+
+* Turing completeness is very dangerous, particularly in open access systems like public blockchains, because of the halting problem we touched on earlier. For example, modern printers are Turing complete and can be given files to print that send them into a frozen state. The fact that Ethereum is Turing complete means that any program of any complexity can be computed by Ethereum. But that flexibility brings some thorny security and resource management problems. An unresponsive printer can be turned off and turned back on again. That is not possible with a public blockchain.
+
+* Infinite loops are possible and can introduce DoS risks to the network. i.e a smart contract can be created to run forever when a when a doe attempts to validate it.
+
+## Gas, the solution to the Turing Complete issue
+
+* Ethereum introduces a metering mechanism called gas. As the EVM executes a smart contract, it carefully accounts for every instruction (computation, data access, etc.). Each instruction has a predetermined cost in units of gas. When a transaction triggers the execution of a smart contract, it must include an amount of gas that sets the upper limit of what can be consumed running the smart contract. The EVM will terminate execution if the amount of gas consumed by computation exceeds the gas available in the transaction. Gas is the mechanism Ethereum uses to allow Turing-complete computation while limiting the resources that any program can consume.
+  
+* Gas comes from the ether balance.Any unused gas is refunded to the sender after the transaction is complete
