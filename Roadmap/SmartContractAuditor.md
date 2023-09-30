@@ -2,6 +2,7 @@
 
 ## I've decided to start down a learning path for smart contract auditing. I will use this repo as a record of steps i've taken to achieve this. I will be following this [repo](https://github.com/razzorsec/AuditorsRoadmap) from razzorsec as a guide guide to becoming smart contract literate all the way up to auditing smart contracts.
 
-![alt text]
+
+
 
 
