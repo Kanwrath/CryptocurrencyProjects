@@ -8,7 +8,7 @@ I stumbled upon this [Youtube Video](https://www.youtube.com/watch?v=hqsqbjPKTRI
 
 My OSINT senses were tingling as well from loking at the comment section of the video. All comments were made by accounts that all had the same "user-XXXX" syntax. This suggests that these were most likely bot accounts created by the original poster to make this video and code seem more legitimate. 
 
-
+![alt text](https://github.com/Kanwrath/Web3-Ethereum-Smart_Contracts-Blockchains/blob/main/SmartContractAudits/img/YT.png)
 
 Etherscan has a newer application called [Code Reader](https://etherscan.io/code-reader). I copied the code into here and utilizing the ChatGPT API asked a few questions about this contract.
 
