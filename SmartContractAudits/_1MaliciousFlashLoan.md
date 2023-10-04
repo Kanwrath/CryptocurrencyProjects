@@ -1,4 +1,4 @@
-## Hello World....of malicious Smart Contracts
+# Hello World....of malicious Smart Contracts
 
 ### Welcome to my first smart contract audit(It will be rudimentary and probably provide little value but I wanted to docuemtn my first step into this world.)
 
