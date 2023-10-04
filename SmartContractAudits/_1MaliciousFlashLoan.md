@@ -6,9 +6,9 @@ I have been reading about flash loan bots / MEV bots and was interested in the a
 
 I stumbled upon this [Youtube Video](https://www.youtube.com/watch?v=hqsqbjPKTRI&t=2s) talking about a flash loan. linked in the video description was a [Smart Contract](https://githubdata.com/usercontent/raw-data/eth_multiplier_contract_code_raw-30848ds4) I know the VERY bare basics of programming and solidity but I wanted to dig into this with the aid of AI. 
 
-My OSINT senses were tingling as well from loking at the comment section of the video. All comments were made by accounts that all had the same "user-XXXX" syntax. This suggests that these were most likely bot accounts created by the original poster to make this video and code seem more legitimate. 
+My OSINT senses were tingling as well from looking at the comment section of the video. All comments were made by accounts that all had the same "user-XXXXXX" syntax. This suggests that these were most likely bot accounts created by the original poster to make this video and code seem more legitimate. 
 
-![alt text](https://github.com/Kanwrath/Web3-Ethereum-Smart_Contracts-Blockchains/blob/main/SmartContractAudits/img/YT.png)
+![alt text](https://github.com/Kanwrath/Web3-Ethereum-Smart_Contracts-Blockchains/blob/main/SmartContractAudits/img/YT.jpg)
 
 Etherscan has a newer application called [Code Reader](https://etherscan.io/code-reader). I copied the code into here and utilizing the ChatGPT API asked a few questions about this contract.
 
